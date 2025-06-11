@@ -22,6 +22,10 @@ const kwid = new Carro('kwid', 'azul', 15);
 
 const distancia = 100;
 const precoCombustivel = 5.15;
+
+console.log(gol)
+console.log(kwid.calculaCusto(100, 5));
+
 //array
 const Carros = [gol, kwid];
 
@@ -29,3 +33,4 @@ Carros.forEach(Carro => {
     const custo = Carro.calculaCusto(distancia, precoCombustivel);
     console.log(`O ${Carro.marca} gastará ${custo.toFixed(2)} para percorrer ${distancia} kms`);
 });
+
