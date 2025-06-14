@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1 {
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Meu primeiro site</p>
+    
+    <button id="btnTeste" type="button">
+        Teste
+    </button>
+
+    <!-- 
+    - Boa prática: O Script vem no body, no final da página, para o servidor carregar as informações antes do script
+    - Alguns script de java script são apenas para web
+    -->
+    <script>
+        // winddow = janela = browser
+        
+        // documente é o documento corrente
+        const btnTeste = document.getElementById("btnTeste")
+
+        //addEventListener = quando acontecer 
+        btnTeste.addEventListener("click", function() {
+            console.log('Clicou no botão!')
+        })
+
+    </script>
+</body>
+</html>
